@@ -1,7 +1,5 @@
 public class Solution {
-    public static void main(String[] args) {
-        findNumbers(2,123,2134,4545,123334);
-    }
+
     public int findNumbers(int[] nums) {
         int num=0,c=0,cEven=0;
         for(int i=0;i<nums.length;i++) {
