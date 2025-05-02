@@ -4,5 +4,6 @@ public class Method {
     }
     public static void main(String[] args) {
         greet("Ikram");
+        greet("Nazgul");
     }
 }
