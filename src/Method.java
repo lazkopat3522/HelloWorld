@@ -1,9 +1,15 @@
+import java.util.Scanner;
+
 public class Method {
-    public static void greet(String name) {
-        System.out.println("Hello "+name+" !");
-    }
+        public static int square(int a) {
+            return a*a;
+        }
     public static void main(String[] args) {
-        greet("Ikram");
-        greet("Nazgul");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+
+            System.out.println(square(a));
     }
+
+
 }
