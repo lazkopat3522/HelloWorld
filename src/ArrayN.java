@@ -10,13 +10,12 @@ public class ArrayN {
         }
         int step=sc.nextInt();
         if(step>0) {
-            for (int i = 0; i < n+n; i++) {
+            for (int i = 0; i < n; i++) {
                 int index=((i+step)%n)+n;
                 arr[index]=arr[i];
                 }
             for(int i=n;i<n+n;i++)
-                System.out.println(arr[i]+" ");
+                System.out.print(arr[i]+" ");
             }
         }
     }
-}
