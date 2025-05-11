@@ -4,13 +4,15 @@ public class Recursion {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int num= sc.nextInt();
-        System.out.println(fibonacci(num));
+        System.out.println(sumOfNumbers(num));
 
     }
-    private static int fibonacci(int n){
-        if(n<=1){
-            return n;
-        } return (fibonacci(n-1)+fibonacci(n-2));
+    private static int sumOfNumbers(int n){
+        if(n<1){
+            return 0;
+        }
+        return n+sumOfNumbers(n-1);
+
     }
 
 }
