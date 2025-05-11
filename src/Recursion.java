@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 public class Recursion {
     public static void main(String[] args) {
-
-        System.out.println(fibonacci(6));
+        Scanner sc=new Scanner(System.in);
+        int num= sc.nextInt();
+        System.out.println(fibonacci(num));
 
     }
     private static int fibonacci(int n){
