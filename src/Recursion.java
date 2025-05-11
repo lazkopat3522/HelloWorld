@@ -1,13 +1,16 @@
 public class Recursion {
     public static void main(String[] args) {
 
-        sayHi();
+        sayHi(2);
 
 
     }
-    private static void sayHi(){
+    private static void sayHi(int count){
         System.out.println("Hi");
-        sayHi();
+        if(count<=1){
+            return;
+        }
+            sayHi(count-1);
     }
 
 }
