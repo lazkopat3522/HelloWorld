@@ -7,14 +7,13 @@ public class methodVoid {
         Scanner sc=new Scanner(System.in);
         String str=sc.next();
         int p=sc.nextInt();
-        callMeBaby(str);
-        System.out.println(" you got "+calculateExamScore(p)+" on exam");
+        System.out.println(callMeBaby(str)+" you got "+calculateExamScore(p)+" on exam");
     }
-    public static void callMeBaby(String name){
+    public static String callMeBaby(String name){
         boolean boo=(name.equalsIgnoreCase("ikram"))?true:false;
         if(boo){
-            System.out.print("Hi "+name);
-        } else System.out.print("I dont know you to greet");
+            return "Hi "+name;
+        } else return "I dont know you to greet";
 
     }
     public static int calculateExamScore(int point){
