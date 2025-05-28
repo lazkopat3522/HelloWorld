@@ -9,13 +9,23 @@ public class ArrayN {
             arr[i]=sc.nextInt();
         }
         int step=sc.nextInt();
-        if(step>0) {
+        /*if(step>0) {
             for (int i = 0; i < n; i++) {
-                int index=((i+step)%n)+n;//finding the new index and plus n  is to place in new index after n+
+                int index=((i+step)%n)+n;
                 arr[index]=arr[i];
                 }
-            for(int i=n;i<n+n;i++) //same array but starting from n+1 element where i have sorted with n amount of steps
+            for(int i=n;i<n+n;i++)
                 System.out.print(arr[i]+" ");
+            }*/
+        if(step<0) {
+            for (int i = 0; i < n; i++) {
+                int index=(Math.abs(i+step))%n;
+                System.out.println(i+" >> "+index);
+                //arr[index]=arr[i];
+
             }
+            for(int i=n;i<n+n;i++)
+                System.out.print(arr[i]+" ");
+        }
         }
     }
