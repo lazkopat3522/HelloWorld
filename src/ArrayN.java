@@ -19,8 +19,12 @@ public class ArrayN {
             }*/
         if(step<0) {
             for (int i = 0; i < n; i++) {
-                int index=(Math.abs(i+step))%n;
-                System.out.println(i+" >> "+index);
+                int index=n-((Math.abs(i+step))%n);
+                if(index%n==0){
+                    System.out.println(i+" >> "+index+n);
+                }else {
+                    System.out.println(i+" >> "+(index+n)%(n+n));
+                }
                 //arr[index]=arr[i];
 
             }
