@@ -21,7 +21,7 @@ public class ArrayShariki {
             List<Object> resultList = new ArrayList<>();
             // Add elements to resultList if their frequency is <= 3
             for (Object element : arr) {
-                if (frequencyMap.get(element) <= 3) {
+                if (frequencyMap.get(element) <= 2) {
                     resultList.add(element);
                 }
             }
@@ -32,7 +32,7 @@ public class ArrayShariki {
         public static void main(String[] args) {
             // Example with Integers
             int c=0;
-            Integer[] numbers = {1};
+            Integer[] numbers = {1,3,3,3,4,4,5,5,5,5,4,1,1};
             int initialCount=numbers.length;
             System.out.println("First size was = "+initialCount);
             Object[] filteredNumbers = removeBalls(numbers);
