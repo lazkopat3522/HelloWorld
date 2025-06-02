@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class ArrayShariki {
 
-        public static Object[] removeElementsOccurringMoreThanThrice(Object[] arr) {
+        public static Object[] removeBalls(Object[] arr) {
             if (arr == null || arr.length == 0) {
                 return new Object[0]; // Or handle as an error, depending on requirements
             }
@@ -31,21 +31,17 @@ public class ArrayShariki {
 
         public static void main(String[] args) {
             // Example with Integers
-            Integer[] numbers = {1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 3 ,5, 5, 5, 5, 5};
-            Object[] filteredNumbers = removeElementsOccurringMoreThanThrice(numbers);
+            int c=0;
+            Integer[] numbers = {1};
+            int initialCount=numbers.length;
+            System.out.println("First size was = "+initialCount);
+            Object[] filteredNumbers = removeBalls(numbers);
             System.out.print("Filtered numbers: ");
             for (Object num : filteredNumbers) {
+                c++;
                 System.out.print(num + " "); // Output: 1 2 2 3 3 3
             }
-            System.out.println();
-
-            // Example with Strings
-            String[] words = {"apple", "banana", "apple", "orange", "banana", "apple", "grape", "apple", "banana", "banana"};
-            Object[] filteredWords = removeElementsOccurringMoreThanThrice(words);
-            System.out.print("Filtered words: ");
-            for (Object word : filteredWords) {
-                System.out.print(word + " "); // Output: orange grape
-            }
+            System.out.println("The number of deleted balls = "+(initialCount-c));
             System.out.println();
         }
     }
