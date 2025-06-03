@@ -26,14 +26,13 @@ public class ArrayShariki {
 
         public static void main(String[] args) {
             int c=0;
-            ArrayList<Integer> list = new ArrayList<>();
-
-            System.out.print("Enter number of elements: ");
-            int n = sc.nextInt();
-
-            System.out.println("Enter " + n + " integers:");
-            for (int i = 0; i < n; i++) {
-                list.add(sc.nextInt());
+            Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            Integer[] numbers=new Integer[n];
+            for(int i=0;i<n;i++){
+                    numbers[i]= sc.nextInt();
+            }
+            //Integer[] numbers = {};
             int initialCount=numbers.length;
             Object[] filteredNumbers = removeBalls(numbers);
             for (Object num : filteredNumbers) {
