@@ -10,7 +10,9 @@ public class milesToKm {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int m=sc.nextInt();
-        System.out.println(milesTokilometr(m));
+        if(milesTokilometr(m)>8000){
+            System.out.println("It is time to change oil");
+        } else System.out.println("Dont worry you can ride some miles");
     }
 
 }
