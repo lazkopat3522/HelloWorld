@@ -10,9 +10,10 @@ public class stringTimes {
         System.out.print(stringN(str,n));
     }
     public static String stringN(String str,int n){
-        if(n>=1){
-            return str+stringN(str,n-1);
+        String res="";
+        for(int i=1;i<=n;i++){
+            res=res+str;
         }
-        return "";
+        return res;
     }
 }
